@@ -59,8 +59,8 @@ class LinkedList
 
   def pop
     current_node = head_node
-    until current_node.next_node.next_node.nil?
-      current_node = current_node.next_node
+    current_node = current_node.next_node until current_node.next_node.next_node.nil?
+
     end
     current_node.next_node = nil
   end
